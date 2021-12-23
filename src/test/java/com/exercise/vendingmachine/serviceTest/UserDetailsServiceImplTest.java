@@ -35,6 +35,7 @@ public class UserDetailsServiceImplTest {
     @Test
     public void testLoadUserByUsername() throws Exception {
         UserDetailsDto userDetailsDto = new UserDetailsDto(user);
+
         when(userRepository.findTopByUsername(user.getUsername())).thenReturn(Optional.of(user));
         assertEquals(userDetailsServiceImpl.loadUserByUsername(user.getUsername()).getUsername(),userDetailsDto.getUsername());
     }

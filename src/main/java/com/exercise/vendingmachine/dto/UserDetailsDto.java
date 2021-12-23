@@ -4,10 +4,12 @@ import java.util.Collection;
 import java.util.Collections;
 
 import com.exercise.vendingmachine.model.User;
+import lombok.EqualsAndHashCode;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+@EqualsAndHashCode
 public class UserDetailsDto implements UserDetails {
 
     private User user;
