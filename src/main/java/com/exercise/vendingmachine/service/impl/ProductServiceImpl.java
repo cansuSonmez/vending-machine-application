@@ -2,7 +2,7 @@ package com.exercise.vendingmachine.service.impl;
 
 import com.exercise.vendingmachine.dto.ProductDto;
 import com.exercise.vendingmachine.dto.UserDetailsDto;
-import com.exercise.vendingmachine.exception.EntityNotFoundException;
+import com.exercise.vendingmachine.advice.exception.EntityNotFoundException;
 import com.exercise.vendingmachine.model.Product;
 import com.exercise.vendingmachine.repository.ProductRepository;
 import com.exercise.vendingmachine.service.ProductService;

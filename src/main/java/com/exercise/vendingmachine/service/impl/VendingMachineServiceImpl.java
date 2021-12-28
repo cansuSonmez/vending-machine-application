@@ -4,7 +4,7 @@ import com.exercise.vendingmachine.dto.BuyResponseDto;
 import com.exercise.vendingmachine.dto.DepositDto;
 import com.exercise.vendingmachine.dto.PurchaseDto;
 import com.exercise.vendingmachine.dto.UserDetailsDto;
-import com.exercise.vendingmachine.exception.EntityNotFoundException;
+import com.exercise.vendingmachine.advice.exception.EntityNotFoundException;
 import com.exercise.vendingmachine.model.Product;
 import com.exercise.vendingmachine.model.Purchase;
 import com.exercise.vendingmachine.model.User;

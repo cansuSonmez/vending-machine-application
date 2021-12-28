@@ -1,4 +1,4 @@
-package com.exercise.vendingmachine.exception;
+package com.exercise.vendingmachine.advice.exception;
 
 public class UsernameNotFoundException extends RuntimeException{
 

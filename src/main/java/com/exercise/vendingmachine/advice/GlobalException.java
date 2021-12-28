@@ -1,8 +1,8 @@
 package com.exercise.vendingmachine.advice;
 
-import com.exercise.vendingmachine.exception.AccessDeniedException;
-import com.exercise.vendingmachine.exception.EntityNotFoundException;
-import com.exercise.vendingmachine.exception.UsernameNotFoundException;
+import com.exercise.vendingmachine.advice.exception.AccessDeniedException;
+import com.exercise.vendingmachine.advice.exception.EntityNotFoundException;
+import com.exercise.vendingmachine.advice.exception.UsernameNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

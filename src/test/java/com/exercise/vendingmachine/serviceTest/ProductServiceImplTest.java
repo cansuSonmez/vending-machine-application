@@ -3,7 +3,7 @@ package com.exercise.vendingmachine.serviceTest;
 import com.exercise.vendingmachine.dto.ProductDto;
 import com.exercise.vendingmachine.dto.UserDetailsDto;
 import com.exercise.vendingmachine.enumeration.UserRole;
-import com.exercise.vendingmachine.exception.EntityNotFoundException;
+import com.exercise.vendingmachine.advice.exception.EntityNotFoundException;
 import com.exercise.vendingmachine.model.Product;
 import com.exercise.vendingmachine.model.User;
 import com.exercise.vendingmachine.repository.ProductRepository;
