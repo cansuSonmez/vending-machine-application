@@ -31,12 +31,14 @@ public class UserController {
     @PostMapping
     private @ResponseBody
     User createUser(@RequestBody @Valid UserDto userDto) {
+        log.debug("User created",userDto);
         return userService.createUser(userDto);
     }
 
     @GetMapping("/{userId}")
     private @ResponseBody
     User getUser(@AuthenticationPrincipal UserDetailsDto userDetailsDto, @PathVariable Long userId) {
+        log.error("error mesajıdır");
         return userService.getUser(userDetailsDto, userId);
     }
 

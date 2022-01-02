@@ -1,5 +1,6 @@
 package com.exercise.vendingmachine.service.impl;
 
+import com.exercise.vendingmachine.config.FilterConfig;
 import com.exercise.vendingmachine.dto.BuyResponseDto;
 import com.exercise.vendingmachine.dto.DepositDto;
 import com.exercise.vendingmachine.dto.PurchaseDto;
@@ -12,12 +13,14 @@ import com.exercise.vendingmachine.repository.ProductRepository;
 import com.exercise.vendingmachine.repository.PurchaseRepository;
 import com.exercise.vendingmachine.repository.UserRepository;
 import com.exercise.vendingmachine.service.VendingMachineService;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 
 import java.util.List;
-
+@Slf4j
 @Service
 public class VendingMachineServiceImpl implements VendingMachineService {
 
@@ -45,6 +48,13 @@ public class VendingMachineServiceImpl implements VendingMachineService {
             user.setDeposit(0L);
         }
         user.setDeposit(user.getDeposit() + depositDto.getCoin().getCents());
+
+        MDC.put("ip", FilterConfig.IP_ADDRESS);
+        MDC.put("url", FilterConfig.URL_ADDRESS );
+        MDC.put("session",FilterConfig.SESSION_ID);
+        MDC.put("agent",FilterConfig.USER_AGENT);
+        log.debug("Deposit updated", user);
+
         return userRepository.save(user);
     }
 
@@ -54,6 +64,13 @@ public class VendingMachineServiceImpl implements VendingMachineService {
         User user = userRepository.findById(userDetailsDto.getUser().getId())
                 .orElseThrow(() -> new EntityNotFoundException("Entity not found"));
         user.setDeposit(0L);
+
+        MDC.put("ip", FilterConfig.IP_ADDRESS);
+        MDC.put("url", FilterConfig.URL_ADDRESS );
+        MDC.put("session",FilterConfig.SESSION_ID);
+        MDC.put("agent",FilterConfig.USER_AGENT);
+        log.debug("User reset", user);
+
         return userRepository.save(user);
     }
 
@@ -96,6 +113,12 @@ public class VendingMachineServiceImpl implements VendingMachineService {
 
         List<Purchase> purchases = purchaseRepository.findByUserId(user.getId());
         long totalSpent = purchases.stream().mapToLong(Purchase::getTotalCost).sum();
+
+        MDC.put("ip", FilterConfig.IP_ADDRESS);
+        MDC.put("url", FilterConfig.URL_ADDRESS );
+        MDC.put("session",FilterConfig.SESSION_ID);
+        MDC.put("agent",FilterConfig.USER_AGENT);
+        log.debug("Buy product is successfully", product);
 
         return BuyResponseDto.builder()
                 .totalSpent(totalSpent)
