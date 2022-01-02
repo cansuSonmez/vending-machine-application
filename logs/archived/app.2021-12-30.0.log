@@ -1,0 +1,16 @@
+2021-12-30 10:47:19,937 INFO com.exercise.vendingmachine.VendingMachineApplication [main] Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 16076 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+2021-12-30 10:47:19,937 DEBUG com.exercise.vendingmachine.VendingMachineApplication [main] Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-12-30 10:47:19,937 INFO com.exercise.vendingmachine.VendingMachineApplication [main] No active profile set, falling back to default profiles: default
+2021-12-30 10:47:26,236 INFO com.exercise.vendingmachine.VendingMachineApplication [main] Started VendingMachineApplication in 6.733 seconds (JVM running for 7.518)
+2021-12-30 10:47:36,117 DEBUG com.exercise.vendingmachine.controller.UserController [http-nio-8080-exec-1] User created
+2021-12-30 10:52:05,973 INFO com.exercise.vendingmachine.VendingMachineApplication [main] Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 7692 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+2021-12-30 10:52:05,973 DEBUG com.exercise.vendingmachine.VendingMachineApplication [main] Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-12-30 10:52:05,973 INFO com.exercise.vendingmachine.VendingMachineApplication [main] No active profile set, falling back to default profiles: default
+2021-12-30 10:52:11,205 INFO com.exercise.vendingmachine.VendingMachineApplication [main] Started VendingMachineApplication in 5.651 seconds (JVM running for 6.266)
+2021-12-30 10:52:27,982 DEBUG com.exercise.vendingmachine.controller.UserController [http-nio-8080-exec-2] User created
+2021-12-30 11:08:33,704 INFO com.exercise.vendingmachine.VendingMachineApplication [main] Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 10476 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+2021-12-30 11:08:33,704 DEBUG com.exercise.vendingmachine.VendingMachineApplication [main] Running with Spring Boot v2.5.4, Spring v5.3.9
+2021-12-30 11:08:33,704 INFO com.exercise.vendingmachine.VendingMachineApplication [main] No active profile set, falling back to default profiles: default
+2021-12-30 11:08:38,847 INFO com.exercise.vendingmachine.VendingMachineApplication [main] Started VendingMachineApplication in 5.64 seconds (JVM running for 6.341)
+2021-12-30 11:08:48,667 DEBUG com.exercise.vendingmachine.controller.UserController [http-nio-8080-exec-1] User created
+2021-12-30 11:08:53,198 ERROR com.exercise.vendingmachine.controller.UserController [http-nio-8080-exec-3] error mesajıdır

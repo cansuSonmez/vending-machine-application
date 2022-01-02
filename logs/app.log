@@ -1,0 +1,55 @@
+2022-01-02 21:58:50,187 INFO com.exercise.vendingmachine.VendingMachineApplication [main] Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 5160 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+2022-01-02 21:58:50,194 DEBUG com.exercise.vendingmachine.VendingMachineApplication [main] Running with Spring Boot v2.5.4, Spring v5.3.9
+2022-01-02 21:58:50,194 INFO com.exercise.vendingmachine.VendingMachineApplication [main] No active profile set, falling back to default profiles: default
+2022-01-02 21:58:55,110 INFO com.exercise.vendingmachine.VendingMachineApplication [main] Started VendingMachineApplication in 5.253 seconds (JVM running for 5.781)
+2022-01-02 22:00:45,995 DEBUG com.exercise.vendingmachine.controller.UserController [http-nio-8080-exec-1] User created
+2022-01-02 22:01:26,554 ERROR com.exercise.vendingmachine.controller.UserController [http-nio-8080-exec-3] error mesajıdır
+2022-01-02 22:01:31,553 ERROR com.exercise.vendingmachine.controller.UserController [http-nio-8080-exec-4] error mesajıdır
+2022-01-02 22:01:31,556 ERROR com.exercise.vendingmachine.advice.GlobalException [http-nio-8080-exec-4] Access Denied Exception
+Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 5316 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+Running with Spring Boot v2.5.4, Spring v5.3.9
+No active profile set, falling back to default profiles: default
+Started VendingMachineApplication in 5.074 seconds (JVM running for 5.538)
+User created
+error mesajıdır
+error mesajıdır
+Access Denied Exception
+Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 7556 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+Running with Spring Boot v2.5.4, Spring v5.3.9
+No active profile set, falling back to default profiles: default
+Started VendingMachineApplication in 4.369 seconds (JVM running for 4.906)
+User created
+error mesajıdır
+Access Denied Exception
+Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 1772 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+Running with Spring Boot v2.5.4, Spring v5.3.9
+No active profile set, falling back to default profiles: default
+Started VendingMachineApplication in 4.467 seconds (JVM running for 4.943)
+User created
+error mesajıdır
+Access Denied Exception
+Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 3508 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+Running with Spring Boot v2.5.4, Spring v5.3.9
+No active profile set, falling back to default profiles: default
+Started VendingMachineApplication in 4.481 seconds (JVM running for 4.955)
+User created
+error mesajıdır
+Access Denied Exception
+[] Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 11020 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+[] Running with Spring Boot v2.5.4, Spring v5.3.9
+[] No active profile set, falling back to default profiles: default
+[] Started VendingMachineApplication in 4.858 seconds (JVM running for 5.327)
+[] User created
+[0:0:0:0:0:0:0:1] User created
+[] error mesajıdır
+[] Access Denied Exception
+[]  [] [] []Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 1844 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+[]  [] [] []Running with Spring Boot v2.5.4, Spring v5.3.9
+[]  [] [] []No active profile set, falling back to default profiles: default
+[]  [] [] []Started VendingMachineApplication in 5.107 seconds (JVM running for 5.545)
+[]  [] [] []User created
+[0:0:0:0:0:0:0:1]  [http://localhost:8080/users] [182B86A47B59705089C4F38026B1C3CD] [PostmanRuntime/7.28.4]User created
+[0:0:0:0:0:0:0:1]  [http://localhost:8080/users] [182B86A47B59705089C4F38026B1C3CD] [PostmanRuntime/7.28.4]Load User By Username 
+[0:0:0:0:0:0:0:1]  [http://localhost:8080/users] [182B86A47B59705089C4F38026B1C3CD] [PostmanRuntime/7.28.4]error mesajıdır
+[0:0:0:0:0:0:0:1]  [http://localhost:8080/users/2] [17120EA171C907460D6A9A2896355AFB] [PostmanRuntime/7.28.4]User access denies
+[0:0:0:0:0:0:0:1]  [http://localhost:8080/users/2] [17120EA171C907460D6A9A2896355AFB] [PostmanRuntime/7.28.4]Internal Server Error
