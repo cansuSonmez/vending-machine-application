@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.NoHandlerFoundException;
 
 import javax.servlet.Filter;
+import javax.servlet.ServletException;
+import java.io.IOException;
+import java.sql.SQLDataException;
 
 @Slf4j
 @ControllerAdvice
@@ -111,6 +114,28 @@ public class GlobalException {
 
         return new ResponseEntity<ErrorObject>(errorObject,HttpStatus.INTERNAL_SERVER_ERROR);
 
+    }
+
+    @ExceptionHandler (IOException.class)
+    public ResponseEntity<ErrorObject> handleIOException(IOException exception) {
+
+        ErrorObject errorObject = new ErrorObject();
+        errorObject.setStatus(HttpStatus.FORBIDDEN.value());
+        errorObject.setMessage(exception.getMessage());
+        errorObject.setTimestamp(System.currentTimeMillis());
+        log.error("Access Denied Exception", FilterConfig.IP_ADDRESS,FilterConfig.URL_ADDRESS,FilterConfig.SESSION_ID,FilterConfig.USER_AGENT);
+        return new ResponseEntity<ErrorObject>(errorObject, HttpStatus.FORBIDDEN);
+    }
+
+    @ExceptionHandler (ServletException.class)
+    public ResponseEntity<ErrorObject> handleSQLException(ServletException exception) {
+
+        ErrorObject errorObject = new ErrorObject();
+        errorObject.setStatus(HttpStatus.FORBIDDEN.value());
+        errorObject.setMessage(exception.getMessage());
+        errorObject.setTimestamp(System.currentTimeMillis());
+        log.error("Access Denied Exception", FilterConfig.IP_ADDRESS,FilterConfig.URL_ADDRESS,FilterConfig.SESSION_ID,FilterConfig.USER_AGENT);
+        return new ResponseEntity<ErrorObject>(errorObject, HttpStatus.FORBIDDEN);
     }
 
 }

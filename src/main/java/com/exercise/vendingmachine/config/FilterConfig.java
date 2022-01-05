@@ -34,8 +34,6 @@ public class FilterConfig  implements Filter {
                 ? req.getHeader("User-Agent")
                 : req.getHeader("user-agent");
 
-        System.out.println(IP_ADDRESS + SESSION_ID + "rest bilgileri" +
-                "");
         filterChain.doFilter(req, res);
     }
 }

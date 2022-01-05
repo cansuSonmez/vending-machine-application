@@ -32,6 +32,7 @@ public class UserController {
     private @ResponseBody
     User createUser(@RequestBody @Valid UserDto userDto) {
         log.debug("User created",userDto);
+        log.info("info mesaj created user");
         return userService.createUser(userDto);
     }
 
