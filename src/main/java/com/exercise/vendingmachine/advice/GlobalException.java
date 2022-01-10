@@ -32,7 +32,11 @@ public class GlobalException {
         errorObject.setStatus(HttpStatus.FORBIDDEN.value());
         errorObject.setMessage(exception.getMessage());
         errorObject.setTimestamp(System.currentTimeMillis());
-        log.error("Access Denied Exception", FilterConfig.IP_ADDRESS,FilterConfig.URL_ADDRESS,FilterConfig.SESSION_ID,FilterConfig.USER_AGENT);
+        MDC.put("ip", FilterConfig.IP_ADDRESS);
+        MDC.put("url", FilterConfig.URL_ADDRESS );
+        MDC.put("session",FilterConfig.SESSION_ID);
+        MDC.put("agent",FilterConfig.USER_AGENT);
+        log.error("Access Denied Exception");
         return new ResponseEntity<ErrorObject>(errorObject, HttpStatus.FORBIDDEN);
     }
 

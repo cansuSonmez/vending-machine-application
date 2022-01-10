@@ -1,14 +1,4 @@
-[]  [] [] []Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 1528 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
+[]  [] [] []Starting VendingMachineApplication using Java 14.0.2 on MSKK-DAN-LT9129 with PID 10100 (C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application\target\classes started by cansu.sonmez in C:\Users\cansu.sonmez\IdeaProjects\vending-machine-application)
 []  [] [] []Running with Spring Boot v2.5.4, Spring v5.3.9
 []  [] [] []No active profile set, falling back to default profiles: default
-[]  [] [] []Started VendingMachineApplication in 6.912 seconds (JVM running for 7.748)
-[]  [] [] []User created
-[]  [] [] []info mesaj created user
-[0:0:0:0:0:0:0:1]  [http://localhost:8080/users] [CB7F68F438649B7603EF58AC0D74A1B8] [PostmanRuntime/7.28.4]User created
-[0:0:0:0:0:0:0:1]  [http://localhost:8080/users] [CB7F68F438649B7603EF58AC0D74A1B8] [PostmanRuntime/7.28.4]Load User By Username 
-[0:0:0:0:0:0:0:1]  [http://localhost:8080/users] [CB7F68F438649B7603EF58AC0D74A1B8] [PostmanRuntime/7.28.4]error mesajıdır
-[0:0:0:0:0:0:0:1]  [http://localhost:8080/users/1] [D1BA2926C5600A1875CFCFB90DFAF085] [PostmanRuntime/7.28.4]User found
-[0:0:0:0:0:0:0:1]  [http://localhost:8080/users/1] [D1BA2926C5600A1875CFCFB90DFAF085] [PostmanRuntime/7.28.4]Load User By Username 
-[0:0:0:0:0:0:0:1]  [http://localhost:8080/users/1] [D1BA2926C5600A1875CFCFB90DFAF085] [PostmanRuntime/7.28.4]error mesajıdır
-[0:0:0:0:0:0:0:1]  [http://localhost:8080/users/2] [A09582942415FCA5DC60616F32028C44] [PostmanRuntime/7.28.4]User access denies
-[0:0:0:0:0:0:0:1]  [http://localhost:8080/users/2] [A09582942415FCA5DC60616F32028C44] [PostmanRuntime/7.28.4]Internal Server Error
+[]  [] [] []Started VendingMachineApplication in 6.064 seconds (JVM running for 6.855)

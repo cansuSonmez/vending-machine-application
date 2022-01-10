@@ -5,6 +5,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.stream.IntStream;
+
 @SpringBootApplication
 @EnableTransactionManagement
 public class VendingMachineApplication {
@@ -13,6 +20,7 @@ public class VendingMachineApplication {
 
         SpringApplication.run(VendingMachineApplication.class, args);
     }
+
 
     /*@Bean
     CommandLineRunner initializeDatabase(ProductRepository productRepository) {

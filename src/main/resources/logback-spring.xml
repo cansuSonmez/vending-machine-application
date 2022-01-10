@@ -22,7 +22,7 @@
             </layout>
         </appender>
 
-        <logger name="jsonLogger" level="TRACE">
+        <logger name="json" level="TRACE">
             <appender-ref ref="json" />
         </logger>
 

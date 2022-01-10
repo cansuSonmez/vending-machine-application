@@ -32,6 +32,7 @@ public class UserServiceImpl implements UserService {
         this.userRepository = userRepository;
     }
 
+
     /*
      * Create user can be called by anyone
      */
